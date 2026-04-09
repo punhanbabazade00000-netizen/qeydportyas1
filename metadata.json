@@ -1,0 +1,5 @@
+{
+  "name": "Azərbaycan Respublikası - Yaşayış Qeydiyyatı Portalı",
+  "description": "Binalar üzrə qeydiyyatda olan sakinlərin məlumatlarını əks etdirən demo portal.",
+  "requestFramePermissions": ["geolocation"]
+}
