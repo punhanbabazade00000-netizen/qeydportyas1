@@ -1,20 +1,43 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Qeydiyyat Portalı (Yaşayış Qeydiyyatı Portalı)
 
-# Run and deploy your AI Studio app
+Bu layihə Azərbaycan Respublikası E-Dövlət sisteminin tərkib hissəsi olan Yaşayış Qeydiyyatı Portalının simulyasiyasıdır. Layihə həm frontend (React + Vite), həm də backend (Express + SQL) hissələrdən ibarətdir.
 
-This contains everything you need to run your app locally.
+## Əsas Funksionallıqlar
 
-View your app in AI Studio: https://ai.studio/apps/706e0d30-c4d7-4848-9c2a-342c96e64bd3
+- **İnteqrasiya olunmuş Xəritə:** Binaların, xəstəxanaların və polis şöbələrinin xəritədə vizuallaşdırılması.
+- **Real-vaxt Data:** Backend API vasitəsilə sakinlərin və binaların məlumatlarının idarə olunması.
+- **Yeni Qeydiyyat Sistemi:** Vətəndaşların qeydiyyatı üçün addımlı forma (Şəxsi məlumatlar + GPS/Xəritə seçimi ilə ünvan).
+- **Dashboard:** Statistik məlumatlar, sakin siyahıları və hesabatların idarə olunması.
+- **Chat Dəstəyi:** Operativ xidməti dəstək üçün bot interfeysi.
 
-## Run Locally
+## Necə işə salmalı?
 
-**Prerequisites:**  Node.js
+### Müstəqil şəkildə işə salmaq üçün:
 
+**1. Asılılıqları yükləyin:**
+```bash
+npm install
+```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+**2. Backend serveri başladın (Port 4000):**
+```bash
+node node_modules/tsx/dist/cli.cjs server/index.ts
+```
+
+**3. Frontend serveri başladın (Port 3000):**
+```bash
+node node_modules/vite/bin/vite.js --port=3000
+```
+
+### Avtomatik işə salmaq üçün (Sistem icazə verirsə):
+```bash
+npm run dev:full
+```
+
+## Texnologiyalar
+
+- **Frontend:** React, TypeScript, Vite, Tailwind CSS, Leaflet, Motion.
+- **Backend:** Express, AlaSQL (In-memory SQL), TSX.
+
+## Müəllif
+[Punhan Babazadə](https://github.com/punhanbabazade00000-netizen)
